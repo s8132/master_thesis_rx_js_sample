@@ -28,14 +28,14 @@
         <div class="row">
             <div class="col-lg-6">
                 <h4>Przykład działania</h4>
-                <a id="button" class="btn btn-primary btn-block test">Kliknij mnie raz lub szybko wielektorotnie</a>
+                <a id="button" class="btn btn-primary btn-block">Kliknij mnie raz lub szybko wielektorotnie</a>
             </div>
             <div class="col-lg-6">
                 <h4>Rezultat</h4>
                 <div class="well text-center" id="click-counter-result"></div>
             </div>
             <script>
-                var clickStream = Rx.Observable.fromEvent(document.querySelector('.test'), 'click');
+                var clickStream = Rx.Observable.fromEvent(document.querySelector('#button'), 'click');
                 var clickCounter = clickStream.map(function() {
                     return 1;
                 }).scan(function(acc, seed){
@@ -49,7 +49,7 @@
             <div class="col-lg-12">
                 <pre>
                     <code class="js">
-var clickStream = Rx.Observable.fromEvent(document.querySelector('.test'), 'click');
+var clickStream = Rx.Observable.fromEvent(document.querySelector('#button'), 'click');
 var clickCounter = clickStream.map(function() {
     return 1;
 }).scan(function(acc, seed){
