@@ -1,0 +1,22 @@
+{
+  "name": "rx_sample",
+  "version": "0.0.0",
+  "authors": [
+    "Marcin <marcinmat16@gamil.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "rxjs": "~4.1.0",
+    "jquery": "~2.2.4",
+    "bootstrap": "~3.3.6",
+    "SyntaxHighlighter": "~3.0.83",
+    "highlightjs": "~9.4.0"
+  }
+}
